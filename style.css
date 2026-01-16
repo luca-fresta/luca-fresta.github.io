@@ -37,6 +37,16 @@ h2 {
   margin-bottom: 18px;
 }
 
+/* Links */
+a {
+  color: #004080;         /* slightly lighter blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Publications list */
 ol.publications {
   counter-reset: pubcount 10; /* total number of papers +1 */
@@ -90,17 +100,8 @@ ul.hanging-bullets li {
   margin-bottom: 20px;    /* increase spacing between bullets */
 }
 
-/* Links inside bullet list */
-ul.hanging-bullets a {
-  color: #004080;         /* slightly lighter blue */
-  text-decoration: none;
-}
 
-ul.hanging-bullets a:hover {
-  text-decoration: underline;
-}
-
-  /* Top-right navigation */
+/* Top-right navigation */
 .topnav {
   position: absolute;
   top: 35px;
