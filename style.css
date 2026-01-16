@@ -1,71 +1,14 @@
-/* Base layout */
 body {
   font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  line-height: 1.55;
-  color: #111;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
+  background-color: #f0f0f0;
 }
 
-/* Main content column */
-.container {
-  width: 760px;
-  margin-left: 120px;
-  margin-top: 60px;
-  margin-bottom: 80px;
-}
-
-/* Name header */
 h1 {
-  font-size: 30px;
-  font-weight: normal;
-  margin-bottom: 25px;
+  color: red;
+  font-size: 40px;
 }
 
-/* Section headers */
-h2 {
-  font-size: 20px;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 45px;
-  margin-bottom: 10px;
-}
-
-/* Thin rule below headers */
-.section-rule {
-  border: none;
-  border-top: 1px solid #999;
-  margin-bottom: 20px;
-}
-
-/* Paragraph spacing */
 p {
-  margin-bottom: 14px;
-}
-
-/* Links */
-a {
-  color: #003366;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Publications list */
-ol.publications {
-  padding-left: 22px;
-}
-
-ol.publications li {
-  margin-bottom: 12px;
-}
-
-/* Journal / book titles */
-.emph {
-  font-style: italic;
+  color: blue;
+  font-size: 20px;
 }
