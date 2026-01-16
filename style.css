@@ -66,9 +66,10 @@ ol.publications li {
 }
 
 /* Custom hanging bullet list */
+/* Custom hanging bullet list */
 ul.hanging-bullets {
   list-style: none;       /* remove default bullets */
-  padding-left: 50px;     /* more space for bullets */
+  padding-left: 50px;     /* space for bullets */
   margin-left: 0;
 }
 
@@ -76,24 +77,22 @@ ul.hanging-bullets li::before {
   content: attr(data-bullet);
   font-weight: bold;
   display: inline-block;
-  width: 40px;            /* wider bullet column */
+  width: 40px;            /* fixed space for bullet */
   text-align: right;
-  margin-left: -50px;     /* align bullet into padding */
-  margin-right: 15px;     /* increase spacing between bullet and text */
+  margin-left: -50px;     /* shift bullet into padding */
+  margin-right: 10px;     /* space between bullet and text */
+}
+
+/* Add more vertical spacing between bullets */
+ul.hanging-bullets li {
+  margin-bottom: 20px;    /* increase spacing between bullets */
 }
 
 /* Links inside bullet list */
 ul.hanging-bullets a {
-  color: #004080;         /* slightly lighter blue than before */
+  color: #004080;         /* slightly lighter blue */
   text-decoration: none;
 }
 
 ul.hanging-bullets a:hover {
-  text-decoration: underline;
-}
-
-/* Optional: small extra spacing in inline elements */
-ul.hanging-bullets span {
-  margin-right: 8px;      /* spacing between authors, journal, volume */
-}
-
+  text-decoration: underl
