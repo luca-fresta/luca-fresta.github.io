@@ -1,63 +1,71 @@
-/* Reset */
+/* Base layout */
 body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: #111;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  color: #000000;
-  font-family: "Latin Modern Roman", "Computer Modern Serif",
-               "Times New Roman", Times, serif;
-  font-size: 16px;
 }
 
-/* Main page layout */
-.page {
-  width: 720px;                 /* classic academic text width */
-  margin-left: 80px;            /* strong left margin like IAM */
+/* Main content column */
+.container {
+  width: 760px;
+  margin-left: 120px;
   margin-top: 60px;
+  margin-bottom: 80px;
 }
 
 /* Name header */
 h1 {
-  font-size: 1.8em;
+  font-size: 30px;
   font-weight: normal;
-  margin-bottom: 1.2em;
+  margin-bottom: 25px;
 }
 
-/* Paragraph text */
+/* Section headers */
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+/* Thin rule below headers */
+.section-rule {
+  border: none;
+  border-top: 1px solid #999;
+  margin-bottom: 20px;
+}
+
+/* Paragraph spacing */
 p {
-  line-height: 1.6;
-  margin-bottom: 1.2em;
+  margin-bottom: 14px;
 }
 
 /* Links */
 a {
-  color: #0000cc;               /* classic academic blue */
+  color: #003366;
   text-decoration: none;
 }
-/* Section headers */
-h2 {
-  font-size: 1.2em;
-  font-weight: normal;
-  margin-top: 2em;
-  margin-bottom: 0.6em;
-}
-
-/* Lists */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 1em;
-}
-
-/* Publications list */
-.pubs li {
-  margin-bottom: 1.5em;
-}
-
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Publications list */
+ol.publications {
+  padding-left: 22px;
+}
+
+ol.publications li {
+  margin-bottom: 12px;
+}
+
+/* Journal / book titles */
+.emph {
+  font-style: italic;
 }
