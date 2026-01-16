@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 
   padding-top: 100px;
-  padding-left: 90px;     /* Bonn-style large left margin */
+  padding-left: 100px;     /* Bonn-style large left margin */
   padding-right: 40px;
   padding-bottom: 80px;
 }
@@ -32,9 +32,9 @@ h2 {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #111111;           /* darker header */
-  margin-top: 50px;
-  margin-bottom: 8px;
+  color: #111111;
+  margin-top: 55px;
+  margin-bottom: 18px;
 }
 
 /* Publications list */
@@ -103,8 +103,8 @@ ul.hanging-bullets a:hover {
   /* Top-right navigation */
 .topnav {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 35px;
+  right: 70px;
   font-size: 14px;
 }
 
