@@ -95,4 +95,25 @@ ul.hanging-bullets a {
 }
 
 ul.hanging-bullets a:hover {
-  text-decoration: underl
+  text-decoration: underline;
+}
+
+  /* Top-right navigation */
+.topnav {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 14px;
+}
+
+.topnav a {
+  margin-left: 22px;
+  color: #004080;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
