@@ -3,7 +3,7 @@ body {
   font-family: 'Libre Baskerville', Times, serif;
   font-size: 17px;
   line-height: 1.55;
-  color: #555555;          /* lighter gray for body */
+  color: #444444;          /* lighter gray for body */
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ body {
 
 /* Name header */
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   color: #111111;           /* darker header */
   margin-bottom: 28px;
@@ -27,9 +27,8 @@ h1 {
 
 /* Section headers */
 h2 {
-  font-size: 21px;
+  font-size: 28px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   color: #111111;           /* darker header */
   margin-top: 50px;
