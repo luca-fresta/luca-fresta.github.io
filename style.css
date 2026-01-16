@@ -51,31 +51,26 @@ ol.publications li {
 }
 
 /* Number column */
+ol.publications {
+  counter-reset: pubcount 0;
+  list-style: none;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+ol.publications li {
+  counter-increment: pubcount;
+  position: relative;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+/* Display descending number */
 ol.publications li::before {
-  content: counter(pubcount);
-  display: table-cell;       /* behaves like a separate cell */
-  width: 40px;               /* fixed width for number column */
+  content: counter(pubcount, decimal);
+  position: absolute;
+  left: 0;
   font-weight: bold;
-  padding-right: 10px;       /* space between number and text */
-  text-align: right;
-}
-
-/* Text column */
-ol.publications li > * {
-  display: table-cell;       /* text in its own column */
-}
-
-ol.publications a {
-  color: #003366;
-  text-decoration: none;
-}
-
-ol.publications a:hover {
-  text-decoration: underline;
-}
-
-.emph {
-  font-style: italic;
 }
 
 ul.manual-bullets {
@@ -96,7 +91,16 @@ ul.manual-bullets .bullet {
   font-weight: bold;      /* optional: bold bullets */
 }
 
+ol.manual-bullets a {
+  color: #003366;
+  text-decoration: none;
+}
 
+ol.manual-bullets a:hover {
+  text-decoration: underline;
+}
 
-
+.emph {
+  font-style: italic;
+}
 
