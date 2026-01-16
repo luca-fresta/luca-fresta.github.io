@@ -1,5 +1,5 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Libre Baskerville', Times, serif;
   font-size: 17px;
   line-height: 1.55;
   color: #111;
@@ -8,6 +8,7 @@ body {
   padding: 0;
 }
 
+/* Main container */
 .container {
   width: 760px;
   margin-left: 120px;
@@ -15,31 +16,36 @@ body {
   margin-bottom: 80px;
 }
 
+/* Name header */
 h1 {
   font-size: 32px;
-  font-weight: normal;
+  font-weight: 700;   /* bold */
   margin-bottom: 28px;
 }
 
+/* Section headers */
 h2 {
   font-size: 21px;
-  font-weight: normal;
+  font-weight: 700;   /* bold */
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 50px;
   margin-bottom: 8px;
 }
 
+/* Thin horizontal rule below sections */
 .section-rule {
   border: none;
   border-top: 1px solid #999;
   margin-bottom: 22px;
 }
 
+/* Paragraph text */
 p {
   margin-bottom: 14px;
 }
 
+/* Links */
 a {
   color: #003366;
   text-decoration: none;
@@ -49,6 +55,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Publications */
 ol.publications {
   padding-left: 22px;
 }
