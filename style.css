@@ -34,18 +34,29 @@ h2 {
   margin-top: 50px;
   margin-bottom: 8px;
 }
+
 /* Publications list */
 ol.publications {
-  padding-left: 22px;
+  counter-reset: pubcount;
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 20px;
 }
 
 ol.publications li {
+  counter-increment: pubcount;
+  position: relative;
   margin-bottom: 14px;
   line-height: 1.4;
+  padding-left: 30px;  /* space for number */
 }
 
-.emph {
-  font-style: italic;
+/* Display number in reverse order */
+ol.publications li::before {
+  content: counter(pubcount, decimal);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
+
 
