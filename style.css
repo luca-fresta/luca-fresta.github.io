@@ -65,14 +65,6 @@ ol.publications li {
   line-height: 1.4;
 }
 
-/* Display descending number */
-ol.publications li::before {
-  content: counter(pubcount, decimal);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-}
-
 ul.hanging-bullets {
   list-style: none;        /* remove default bullets */
   padding-left: 40px;      /* space for bullet column */
@@ -88,4 +80,32 @@ ul.hanging-bullets li::before {
   margin-left: -40px;      /* shift bullet into the padding space */
   margin-right: 10px;      /* space between bullet and text */
 }
+
+/* Custom bullet list */
+ul.hanging-bullets {
+  list-style: none;        /* remove default bullets */
+  padding-left: 40px;      /* space for bullets */
+  margin-left: 0;
+}
+
+ul.hanging-bullets li::before {
+  content: attr(data-bullet);
+  font-weight: bold;
+  display: inline-block;
+  width: 30px;             /* fixed width for bullet column */
+  text-align: right;
+  margin-left: -40px;      /* shift bullet into padding */
+  margin-right: 10px;      /* space between bullet and text */
+}
+
+/* Links in bullet lists */
+ul.hanging-bullets a {
+  color: #003366;          /* nice dark blue */
+  text-decoration: none;   /* no underline by default */
+}
+
+ul.hanging-bullets a:hover {
+  text-decoration: underline;  /* underline on hover */
+}
+
 
