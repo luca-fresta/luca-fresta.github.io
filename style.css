@@ -11,7 +11,7 @@ body {
 
 /* Container */
 .container {
-  width: 760px;
+  width: 860px;
   margin-left: 120px;
   margin-top: 60px;
   margin-bottom: 80px;
@@ -19,7 +19,7 @@ body {
 
 /* Name header */
 h1 {
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 700;
   color: #111111;           /* darker header */
   margin-bottom: 28px;
@@ -34,3 +34,18 @@ h2 {
   margin-top: 50px;
   margin-bottom: 8px;
 }
+/* Publications list */
+ol.publications {
+  padding-left: 22px;
+  margin-bottom: 20px;
+}
+
+ol.publications li {
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.emph {
+  font-style: italic;
+}
+
