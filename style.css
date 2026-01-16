@@ -9,9 +9,7 @@ body {
 
 /* Centered content column */
 .container {
-  max-width: 800px;      /* controls line length */
-  margin: 60px auto;     /* vertical + horizontal centering */
-  padding: 0 20px;       /* breathing room on small screens */
+  margin: 80px 0 0 80px;
 }
 
 /* Main heading */
