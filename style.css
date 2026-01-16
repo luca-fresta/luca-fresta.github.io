@@ -73,34 +73,19 @@ ol.publications li::before {
   font-weight: bold;
 }
 
-ul.manual-bullets {
-  list-style: none;       /* remove default bullets */
-  padding-left: 0;        /* no extra padding */
+ul.hanging-bullets {
+  list-style: none;        /* remove default bullets */
+  padding-left: 40px;      /* space for bullet column */
   margin-left: 0;
 }
 
-ul.manual-bullets li {
-  margin-bottom: 8px;     /* spacing between items */
-}
-
-ul.manual-bullets .bullet {
-  display: inline-block;  /* treat bullet like a fixed-width column */
-  width: 30px;            /* reserve space for bullets */
-  text-align: right;      /* bullet aligned right inside its column */
-  margin-right: 10px;     /* space between bullet and text */
-  font-weight: bold;      /* optional: bold bullets */
-}
-
-ol.manual-bullets a {
-  color: #003366;
-  text-decoration: none;
-}
-
-ol.manual-bullets a:hover {
-  text-decoration: underline;
-}
-
-.emph {
-  font-style: italic;
+ul.hanging-bullets li::before {
+  content: attr(data-bullet); /* custom bullet from data attribute */
+  font-weight: bold;
+  display: inline-block;
+  width: 30px;             /* fixed bullet width */
+  text-align: right;
+  margin-left: -40px;      /* shift bullet into the padding space */
+  margin-right: 10px;      /* space between bullet and text */
 }
 
