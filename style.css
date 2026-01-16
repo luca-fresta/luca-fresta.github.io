@@ -38,26 +38,43 @@ h2 {
 /* Publications list */
 /* True inverse numbering for publications */
 ol.publications {
-  counter-reset: pubcount 10;  /* total number of papers +1, e.g. 10 for 9 papers */
-  list-style: none;
-  padding-left: 30px;
+  counter-reset: pubcount 10;  /* total number of papers +1 */
+  list-style: none;            /* hide default numbers */
+  padding-left: 40px;          /* space for numbers on the left */
   margin-bottom: 20px;
 }
 
 ol.publications li {
-  counter-increment: pubcount -1;   /* decrement by 1 each li */
+  counter-increment: pubcount -1;   /* decrement for each item */
   position: relative;
   margin-bottom: 14px;
   line-height: 1.4;
 }
 
-/* Show the number on the left */
+/* Display number in its own column */
 ol.publications li::before {
   content: counter(pubcount);
   position: absolute;
-  left: 0;
+  left: 0;           /* left edge of the number column */
+  width: 30px;       /* reserve space for number */
+  text-align: right; /* align number to the right */
   font-weight: bold;
 }
+
+
+ol.publications a {
+  color: #003366;
+  text-decoration: none;
+}
+
+ol.publications a:hover {
+  text-decoration: underline;
+}
+
+.emph {
+  font-style: italic;
+}
+
 
 
 
