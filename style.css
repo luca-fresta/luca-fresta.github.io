@@ -65,8 +65,6 @@ ol.publications li > * {
   display: table-cell;       /* text in its own column */
 }
 
-
-
 ol.publications a {
   color: #003366;
   text-decoration: none;
@@ -79,6 +77,25 @@ ol.publications a:hover {
 .emph {
   font-style: italic;
 }
+
+ul.manual-bullets {
+  list-style: none;       /* remove default bullets */
+  padding-left: 0;        /* no extra padding */
+  margin-left: 0;
+}
+
+ul.manual-bullets li {
+  margin-bottom: 8px;     /* spacing between items */
+}
+
+ul.manual-bullets .bullet {
+  display: inline-block;  /* treat bullet like a fixed-width column */
+  width: 30px;            /* reserve space for bullets */
+  text-align: right;      /* bullet aligned right inside its column */
+  margin-right: 10px;     /* space between bullet and text */
+  font-weight: bold;      /* optional: bold bullets */
+}
+
 
 
 
