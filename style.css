@@ -23,6 +23,7 @@ body {
 /* Home header with picture + text side by side */
 .home-header {
   display: flex;               /* side by side */
+  flex-direction: row-reverse;
   align-items: flex-start;     /* top-align text with picture */
   gap: 40px;                   /* space between picture and text */
   margin-bottom: 50px;
@@ -30,7 +31,7 @@ body {
 
 /* Profile picture */
 .profile-pic {
-  width: 160px;                /* adjust size as needed */
+  width: 180px;                /* adjust size as needed */
   height: auto;
   border-radius: 8px;
   object-fit: cover;
