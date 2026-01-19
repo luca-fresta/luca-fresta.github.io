@@ -164,3 +164,15 @@ ul.hanging-bullets li {
   text-decoration: underline;
 }
 
+.teaching-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.teaching-list li {
+  margin-bottom: 18px;   /* vertical breathing room */
+  line-height: 1.5;
+}
+
+
