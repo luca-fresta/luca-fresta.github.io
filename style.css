@@ -29,7 +29,7 @@ body {
   margin-bottom: 50px;
 }
 
-.course-affiliation {
+.course-footer {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -37,12 +37,12 @@ body {
   margin-bottom: 40px;
 }
 
-.course-affiliation img {
+.course-footer img {
   height: 56px;       /* key: readable but not dominant */
   width: auto;
 }
 
-.course-affiliation span {
+.course-footer span {
   font-size: 18px;
   color: #555;
 }
