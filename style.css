@@ -81,14 +81,13 @@ h2 {
   margin-bottom: 18px;
 }
 
-/* Paragraph headers */
+/* Subsection headers */
 h3 {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 700;        /* real bold in Libre Baskerville */
   color: #111111;
-  margin-top: 55px;
-  margin-bottom: 18px;
+  margin-top: 40px;
+  margin-bottom: 14px;
 }
 
 
