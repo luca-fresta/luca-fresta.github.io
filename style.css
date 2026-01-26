@@ -29,19 +29,24 @@ body {
   margin-bottom: 50px;
 }
 
-/* Course header with logo */
-.course-header {
+.course-affiliation {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 25px;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  margin-bottom: 40px;
 }
 
-.course-logo {
-  height: 60px;          /* conservative size */
-  margin-top: 4px;       /* prevents being higher than h2 */
-  opacity: 0.85;         /* subtle */
+.course-affiliation img {
+  height: 48px;       /* key: readable but not dominant */
+  width: auto;
 }
+
+.course-affiliation span {
+  font-size: 15px;
+  color: #555;
+}
+
 
 /* Profile picture */
 .profile-pic {
