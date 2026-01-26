@@ -29,6 +29,20 @@ body {
   margin-bottom: 50px;
 }
 
+/* Course header with logo */
+.course-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.course-logo {
+  height: 60px;          /* conservative size */
+  margin-top: 4px;       /* prevents being higher than h2 */
+  opacity: 0.85;         /* subtle */
+}
+
 /* Profile picture */
 .profile-pic {
   width: 180px;                /* adjust size as needed */
