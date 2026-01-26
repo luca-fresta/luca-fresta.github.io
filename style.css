@@ -38,12 +38,12 @@ body {
 }
 
 .course-affiliation img {
-  height: 48px;       /* key: readable but not dominant */
+  height: 56px;       /* key: readable but not dominant */
   width: auto;
 }
 
 .course-affiliation span {
-  font-size: 15px;
+  font-size: 18px;
   color: #555;
 }
 
