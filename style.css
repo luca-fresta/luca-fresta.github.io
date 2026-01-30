@@ -224,13 +224,28 @@ ul.hanging-bullets li {
 }
 
 .next-talk {
-  background: #f6f6f6;
-  padding: 20px 24px;
-  margin-bottom: 45px;
-  border-left: 4px solid #111;
-  font-size: 15px;
-  line-height: 1.6;
+  margin: 50px 0 60px;
+  padding: 22px 28px;
+  background-color: #f4f7fb;   /* very light blue/grey */
+  border-left: 4px solid #004080;
 }
+
+.next-talk h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.next-talk .talk-line {
+  margin: 4px 0;
+}
+
+.next-talk .talk-title {
+  margin-top: 10px;
+  font-style: italic;
+}
+
 
 .seminar-table {
   width: 100%;
