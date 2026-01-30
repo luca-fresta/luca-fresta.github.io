@@ -28,14 +28,14 @@ body {
   gap: 40px;                   /* space between picture and text */
   margin-bottom: 50px;
 }
-
 .course-footer {
+  margin-top: 70px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  text-align: left;
+  font-size: 14px;
+  color: #666;
 }
 
 .course-footer img {
@@ -151,7 +151,6 @@ ol.publications li {
   line-height: 1.4;
 }
 
-/* Custom hanging bullet list */
 /* Custom hanging bullet list */
 ul.hanging-bullets {
   list-style: none;       /* remove default bullets */
