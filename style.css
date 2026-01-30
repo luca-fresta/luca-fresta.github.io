@@ -208,8 +208,9 @@ ul.hanging-bullets li {
 /* seminar page */
 
 .seminar-banner {
-  width: 100%;
-  max-height: 200px;
+  width: 70%;
+  max-height: 180px;
+  opacity: 0.9;
   object-fit: cover;
   margin: 30px 0 40px;
   border-radius: 4px;
