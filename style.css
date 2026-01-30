@@ -224,3 +224,42 @@ ul.hanging-bullets li {
   line-height: 1.6;
 }
 
+.next-talk {
+  background: #f6f6f6;
+  padding: 20px 24px;
+  margin-bottom: 45px;
+  border-left: 4px solid #111;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.seminar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+.seminar-table th {
+  text-align: left;
+  font-weight: 600;
+  padding: 10px 8px;
+  border-bottom: 2px solid #111;
+}
+
+.seminar-table td {
+  padding: 14px 8px;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+}
+
+.seminar-table tr:hover {
+  background: #fafafa;
+}
+
+.affiliation {
+  font-size: 13px;
+  color: #555;
+}
+
+
