@@ -189,6 +189,12 @@ ul.hanging-bullets li {
   font-weight: 400;
 }
 
+.topnav a.active {
+  font-weight: 700;
+  color: #111111;
+}
+
+
 .topnav a:hover {
   text-decoration: underline;
 }
