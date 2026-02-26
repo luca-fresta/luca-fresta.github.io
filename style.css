@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 
   padding-top: 100px;
-  padding-left: 100px;     /* Bonn-style large left margin */
+  padding-left: 100px;    
   padding-right: 40px;
   padding-bottom: 80px;
 }
@@ -28,6 +28,7 @@ body {
   gap: 40px;                   /* space between picture and text */
   margin-bottom: 50px;
 }
+
 .course-footer {
   margin-top: 80px;
   padding-top: 30px;
@@ -39,7 +40,7 @@ body {
 }
 
 .course-footer img {
-  height: 56px;       /* key: readable but not dominant */
+  height: 56px;      
   width: auto;
 }
 
@@ -51,11 +52,11 @@ body {
 
 /* Profile picture */
 .profile-pic {
-  width: 180px;                /* adjust size as needed */
+  width: 180px;               
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  flex-shrink: 0;              /* prevents shrinking on smaller screens */
+  flex-shrink: 0;        
   margin-top: 30px;
 }
 
@@ -104,7 +105,7 @@ h2 {
 /* Subsection headers */
 h3 {
   font-size: 20px;
-  font-weight: 700;        /* real bold in Libre Baskerville */
+  font-weight: 700;        
   color: #111111;
   margin-top: 40px;
   margin-bottom: 14px;
@@ -122,35 +123,6 @@ a:hover {
 }
 
 /* Publications list */
-ol.publications {
-  counter-reset: pubcount 10; /* total number of papers +1 */
-  list-style: none;           /* remove default numbers */
-  margin-left: 0;
-  padding-left: 0;
-}
-
-ol.publications li {
-  counter-increment: pubcount -1; /* decrement for inverse numbering */
-  display: table;                 /* container for number + text */
-  margin-bottom: 14px;
-  line-height: 1.4;
-}
-
-/* Number column */
-ol.publications {
-  counter-reset: pubcount 0;
-  list-style: none;
-  padding-left: 30px;
-  margin-bottom: 20px;
-}
-
-ol.publications li {
-  counter-increment: pubcount;
-  position: relative;
-  margin-bottom: 14px;
-  line-height: 1.4;
-}
-
 /* Custom hanging bullet list */
 ul.hanging-bullets {
   list-style: none;       /* remove default bullets */
