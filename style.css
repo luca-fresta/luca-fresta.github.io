@@ -175,7 +175,7 @@ ul.hanging-bullets li {
 /* Side-left navigation */
 
 .sidenav {
-  position: relative;
+  position: absolute;
   top: 35px;
   right: 70px;
   font-size: 14px;
