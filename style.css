@@ -171,35 +171,35 @@ ul.hanging-bullets li {
   text-decoration: underline;
 }
 
-.topnav {
+
+/* Side-left navigation */
+
+.sidenav {
   position: absolute;
   top: 35px;
   right: 70px;
   font-size: 14px;
 }
 
-.topnav a {
+.sidenav a {
   margin-left: 22px;
   color: #004080;
   text-decoration: none;
   font-weight: 400;
 }
 
-.topnav a.active {
+.sidenav a.active {
   font-weight: 700;
   color: #111111;
 }
 
-
-.topnav a:hover {
+.sidenav a:hover {
   text-decoration: underline;
 }
 
 
 
-/* Top-left navigation */
-
-
+/* Teaching list */
 
 .teaching-list {
   list-style: none;
