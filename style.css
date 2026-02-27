@@ -184,11 +184,11 @@ ul.hanging-bullets li {
   margin-left: 22px;
   color: #004080;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .sidenav a.active {
-  font-weight: 700;
+  font-weight: 400;
   color: #111111;
 }
 
