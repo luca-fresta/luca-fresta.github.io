@@ -171,6 +171,36 @@ ul.hanging-bullets li {
   text-decoration: underline;
 }
 
+.topnav {
+  position: absolute;
+  top: 35px;
+  right: 70px;
+  font-size: 14px;
+}
+
+.topnav a {
+  margin-left: 22px;
+  color: #004080;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.topnav a.active {
+  font-weight: 700;
+  color: #111111;
+}
+
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Top-left navigation */
+
+
+
 .teaching-list {
   list-style: none;
   padding-left: 0;
