@@ -141,8 +141,14 @@ ol.publications li {
 /* Custom hanging bullet list */
 ul.hanging-bullets {
   list-style: none;       /* remove default bullets */
-  padding-left: 50px;     /* space for bullets */
+  padding-left: 0;   
   margin-left: 0;
+}
+
+ul.hanging-bullets li {
+  padding-left: 50px;
+  text-indent: -50px;
+  margin-bottom: 20px;
 }
 
 ul.hanging-bullets li::before {
@@ -150,8 +156,7 @@ ul.hanging-bullets li::before {
   font-weight: bold;
   display: inline-block;
   width: 40px;            /* fixed space for bullet */
-  text-align: right;
-  padding-left: 0; 
+  text-align: right; 
   margin-left: -50px;     /* shift bullet into padding */
   margin-right: 10px;     /* space between bullet and text */
 }
