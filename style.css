@@ -123,6 +123,21 @@ a:hover {
 }
 
 /* Publications list */
+/* Standard bullets*/
+ol.publications {
+  list-style-position: outside;  /* keep numbers outside */
+  padding-left: 0;               /* remove default indent */
+  margin-left: 0;
+}
+
+ol.publications li {
+  margin-left: 1.8em;            /* space for numbers */
+  text-indent: -1.8em;           /* pull first line left */
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+
 /* Custom hanging bullet list */
 ul.hanging-bullets {
   list-style: none;       /* remove default bullets */
@@ -136,6 +151,7 @@ ul.hanging-bullets li::before {
   display: inline-block;
   width: 40px;            /* fixed space for bullet */
   text-align: right;
+  padding-left: 0; 
   margin-left: -50px;     /* shift bullet into padding */
   margin-right: 10px;     /* space between bullet and text */
 }
@@ -166,14 +182,14 @@ ul.hanging-bullets li {
   color: #111111;
 }
 
-
 .topnav a:hover {
   text-decoration: underline;
 }
 
 
-/* Teaching list */
 
+
+/* Teaching list */
 .teaching-list {
   list-style: none;
   padding-left: 0;
@@ -185,9 +201,7 @@ ul.hanging-bullets li {
   line-height: 1.5;
 }
 
-
 /* seminar page */
-
 .seminar-banner {
   width: 75%;
   max-height: 185px;
@@ -227,7 +241,6 @@ ul.hanging-bullets li {
   margin-top: 10px;
   font-style: italic;
 }
-
 
 .seminar-table {
   width: 100%;
