@@ -133,8 +133,8 @@ ul.hanging-bullets {
 }
 
 ul.hanging-bullets li {
-  padding-left: 50px;
-  text-indent: -50px;
+  padding-left: 0px;
+  text-indent: -1px;
   margin-bottom: 20px;
 }
 
