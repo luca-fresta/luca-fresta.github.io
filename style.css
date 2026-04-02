@@ -123,19 +123,6 @@ a:hover {
 }
 
 /* Publications list */
-/* Standard bullets*/
-ol.publications {
-  list-style-position: outside;  /* keep numbers outside */
-  padding-left: 0;               /* remove default indent */
-  margin-left: 0;
-}
-
-ol.publications li {
-  margin-left: 1.8em;            /* space for numbers */
-  text-indent: -1.8em;           /* pull first line left */
-  margin-bottom: 14px;
-  line-height: 1.4;
-}
 
 
 /* Custom hanging bullet list */
@@ -143,12 +130,6 @@ ul.hanging-bullets {
   list-style: none;       /* remove default bullets */
   padding-left: 0;   
   margin-left: 0;
-}
-
-ul.hanging-bullets li {
-  padding-left: 50px;
-  text-indent: -50px;
-  margin-bottom: 20px;
 }
 
 ul.hanging-bullets li::before {
