@@ -132,6 +132,12 @@ ul.hanging-bullets {
   margin-left: 0;
 }
 
+ul.hanging-bullets li {
+  padding-left: 50px;
+  text-indent: -50px;
+  margin-bottom: 20px;
+}
+
 ul.hanging-bullets li::before {
   content: attr(data-bullet);
   font-weight: bold;
