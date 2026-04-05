@@ -1,120 +1,125 @@
-/* Body text - lighter */
+/* =========================
+   GLOBAL
+========================= */
+
 body {
   font-family: 'Libre Baskerville', Times, serif;
   font-size: 17px;
-  line-height: 1.55;
-  color: #444444;          /* lighter gray for body */
-  background-color: #ffffff;
+  line-height: 1.6;
+  color: #444;
+  background-color: #fff;
   margin: 0;
-  padding: 0;
 }
- 
-/* Container */
+
+/* Prevent overflow issues */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
-  max-width: 900px;
+  max-width: 880px;
   margin: 0 auto;
-
-  padding-top: 100px;
-  padding-left: 100px;    
-  padding-right: 40px;
-  padding-bottom: 80px;
+  padding: 80px 20px 60px;
 }
 
-/* Home header with picture + text side by side */
+/* =========================
+   NAVIGATION
+========================= */
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.topnav a {
+  margin-left: 20px;
+  color: #004080;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  font-weight: 700;
+  color: #111;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HEADER (PHOTO + TEXT)
+========================= */
+
 .home-header {
-  display: flex;               /* side by side */
+  display: flex;
   flex-direction: row-reverse;
-  align-items: flex-start;     /* top-align text with picture */
-  gap: 40px;                   /* space between picture and text */
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
-.course-footer {
-  margin-top: 80px;
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: 14px;
-  color: #666;
-}
-
-.course-footer img {
-  height: 56px;      
-  width: auto;
-}
-
-.course-footer span {
-  font-size: 18px;
-  color: #555;
-}
-
-
-/* Profile picture */
 .profile-pic {
-  width: 180px;               
-  height: auto;
+  width: 180px;
   border-radius: 8px;
-  object-fit: cover;
-  flex-shrink: 0;        
-  margin-top: 30px;
+  flex-shrink: 0;
+  margin-top: 20px;
 }
 
-/* Intro text */
 .intro-text {
-  flex: 1;                     /* take remaining horizontal space */
+  flex: 1;
+  max-width: 600px;
 }
 
-/* Mobile: stack vertically */
-@media (max-width: 700px) {
-  .home-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+/* =========================
+   TYPOGRAPHY
+========================= */
 
-  .profile-pic {
-    width: 120px;
-    margin-bottom: 20px;
-  }
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin: 0 0 16px;
 }
 
 .contact {
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
+/* =========================
+   LINKS
+========================= */
 
-/* Name header */
-h1 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #111111;           /* darker header */
-  margin-bottom: 28px;
-}
-
-/* Section headers */
-h2 {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #111111;
-  margin-top: 55px;
-  margin-bottom: 18px;
-}
-
-/* Subsection headers */
-h3 {
-  font-size: 20px;
-  font-weight: 700;        
-  color: #111111;
-  margin-top: 40px;
-  margin-bottom: 14px;
-}
-
-
-/* Links */
 a {
-  color: #004080;         /* slightly lighter blue */
+  color: #004080;
   text-decoration: none;
 }
 
@@ -122,116 +127,55 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Publications list */
+/* =========================
+   LISTS (PUBLICATIONS)
+========================= */
 
-
-/* Custom hanging bullet list */
 ul.hanging-bullets {
-  list-style: none;       /* remove default bullets */
-  padding-left: 0;   
-  margin-left: 0;
+  list-style: none;
+  padding: 0;
 }
 
 ul.hanging-bullets li {
   padding-left: 5px;
   text-indent: -5px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 ul.hanging-bullets li::before {
   content: attr(data-bullet);
   font-weight: bold;
   display: inline-block;
-  width: 40px;            /* fixed space for bullet */
-  text-align: right; 
-  margin-left: -50px;     /* shift bullet into padding */
-  margin-right: 10px;     /* space between bullet and text */
+  width: 40px;
+  text-align: right;
+  margin-left: -50px;
+  margin-right: 10px;
 }
 
-/* Add more vertical spacing between bullets */
-ul.hanging-bullets li {
-  margin-bottom: 20px;    /* increase spacing between bullets */
-}
+/* =========================
+   SEMINARS
+========================= */
 
-
-/* Top-right navigation */
-.topnav {
-  position: absolute;
-  top: 35px;
-  right: 70px;
-  font-size: 14px;
-}
-
-.topnav a {
-  margin-left: 22px;
-  color: #004080;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.topnav a.active {
-  font-weight: 700;
-  color: #111111;
-}
-
-.topnav a:hover {
-  text-decoration: underline;
-}
-
-
-
-
-/* Teaching list */
-.teaching-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-.teaching-list li {
-  margin-bottom: 18px;   /* vertical breathing room */
-  line-height: 1.5;
-}
-
-/* seminar page */
 .seminar-banner {
-  width: 75%;
-  max-height: 185px;
-  opacity: 0.9;
+  width: 100%;
+  max-height: 180px;
   object-fit: cover;
-  margin: 30px 0 40px;
+  margin: 25px 0 35px;
   border-radius: 4px;
 }
 
 .seminar-info {
   background: #f6f6f6;
   padding: 18px 22px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-size: 15px;
-  line-height: 1.6;
 }
 
 .next-talk {
-  margin: 50px 0 60px;
-  padding: 22px 28px;
-  background-color: #f4f7fb;   /* very light blue/grey */
+  margin: 45px 0 55px;
+  padding: 20px 24px;
+  background-color: #f4f7fb;
   border-left: 4px solid #004080;
-}
-
-.next-talk h3 {
-  margin-top: 0;
-  margin-bottom: 14px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.next-talk .talk-line {
-  margin: 4px 0;
-}
-
-.next-talk .talk-title {
-  margin-top: 10px;
-  font-style: italic;
 }
 
 .seminar-table {
@@ -243,14 +187,12 @@ ul.hanging-bullets li {
 
 .seminar-table th {
   text-align: left;
-  font-weight: 600;
   padding: 10px 8px;
   border-bottom: 2px solid #111;
 }
 
 .seminar-table td {
-  padding: 14px 8px;
-  vertical-align: top;
+  padding: 12px 8px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -258,9 +200,62 @@ ul.hanging-bullets li {
   background: #fafafa;
 }
 
-.affiliation {
-  font-size: 13px;
-  color: #555;
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media (max-width: 700px) {
+
+  .container {
+    padding: 50px 16px 40px;
+  }
+
+  .topnav {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .topnav a {
+    margin: 6px 10px;
+  }
+
+  .home-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    margin-top: 0;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .seminar-table {
+    font-size: 13px;
+  }
+
+  .seminar-table th,
+  .seminar-table td {
+    padding: 8px 6px;
+  }
 }
-
-
