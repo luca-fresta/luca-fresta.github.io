@@ -266,6 +266,14 @@ ul.hanging-bullets li {
   border-bottom: 1px solid #ddd;
 }
 
+.seminar-table td a {
+  text-decoration: none;
+}
+
+.seminar-table td a:hover {
+  text-decoration: underline;
+}
+
 .seminar-table tr:hover {
   background: #fafafa;
 }
