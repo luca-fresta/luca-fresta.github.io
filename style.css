@@ -319,13 +319,19 @@ Mobile Optimization
     font-size: 13px;
   }
 
-    ul.hanging-bullets li {
+  
+  ul.hanging-bullets li {
+    padding-left: 10px;
     margin-bottom: 16px;
   }
-    ul.hanging-bullets li::before {
-    width: 30px;
-    margin-left: -35px;
+
+  ul.hanging-bullets li::before {
+    width: 28px;
+    margin-left: -33px;
+    margin-right: 8px;
   }
+
+
 }
 
 .contact {
