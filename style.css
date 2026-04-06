@@ -156,17 +156,30 @@ ul.hanging-bullets li {
 
 /* Top-right navigation */
 .topnav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+/* old version
+.topnav {
   position: absolute;
   top: 35px;
   right: 70px;
   font-size: 14px;
 }
+*/
 
 .topnav a {
   margin-left: 22px;
   color: #004080;
   text-decoration: none;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .topnav a.active {
@@ -178,7 +191,13 @@ ul.hanging-bullets li {
   text-decoration: underline;
 }
 
-
+@media (max-width: 700px) {
+  .topnav {
+    justify-content: center;
+    gap: 12px;
+    font-size: 13px;
+  }
+}
 
 
 /* Teaching list */
