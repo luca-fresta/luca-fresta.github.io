@@ -266,6 +266,10 @@ ul.hanging-bullets li {
   border-bottom: 1px solid #ddd;
 }
 
+.seminar-table td:nth-child(3) {
+  vertical-align: middle;
+}
+
 .seminar-table td a {
   text-decoration: none;
 }
