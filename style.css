@@ -46,7 +46,7 @@ p {
   margin-top: 80px;
   padding-top: 30px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 14px;
   font-size: 14px;
   color: #666;
