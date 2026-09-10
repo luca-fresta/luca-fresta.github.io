@@ -303,8 +303,23 @@ ul.hanging-bullets li {
   color: #555;
 }
 
-.previous-programmes {
-    margin-top: 60px;
+.programme-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.programme-tabs a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #666;
+}
+
+.programme-tabs a.active {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
 }
 
 
