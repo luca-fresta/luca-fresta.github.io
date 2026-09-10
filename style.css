@@ -303,6 +303,9 @@ ul.hanging-bullets li {
   color: #555;
 }
 
+.previous-programmes {
+    margin-top: 30px;
+}
 
 
 /* ================
@@ -360,11 +363,6 @@ Mobile Optimization
   }
 
 
-}
-
-
-.previous-programmes {
-    margin-top: 30px;
 }
 
 .contact {
