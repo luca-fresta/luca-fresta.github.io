@@ -303,7 +303,7 @@ ul.hanging-bullets li {
   color: #555;
 }
 
-/*.programme-tabs {
+.programme-tabs {
     display: flex;
     gap: 0;
     margin-bottom: 20px;
@@ -321,8 +321,8 @@ ul.hanging-bullets li {
     font-weight: bold;
     border-bottom: 2px solid #000;
 }
-*/
 
+/*
 .programme-tabs {
     display: flex;
     border-bottom: 1px solid #ccc;
@@ -348,7 +348,7 @@ ul.hanging-bullets li {
 .tab:hover {
     color: #000;
 }
-
+*/
 
 /* ================
 Mobile Optimization 
