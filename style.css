@@ -303,7 +303,7 @@ ul.hanging-bullets li {
   color: #555;
 }
 
-.programme-tabs {
+/*.programme-tabs {
     display: flex;
     gap: 0;
     margin-bottom: 20px;
@@ -320,6 +320,33 @@ ul.hanging-bullets li {
     color: #000;
     font-weight: bold;
     border-bottom: 2px solid #000;
+}
+*/
+
+.programme-tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 0.95em;
+    color: #666;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.tab:hover {
+    color: #000;
 }
 
 
