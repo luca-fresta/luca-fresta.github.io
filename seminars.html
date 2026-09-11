@@ -51,44 +51,74 @@ Talks are typically scheduled on Wednesdays between 13:00 and 14:00, though not 
 <h3>Programme</h3>
 
   
-  <div class="programme-tabs">
-      <a href="seminars.html" class="active">WS 2026/27</a>
-      <a href="seminars-ss2026.html">SS 2026</a>
-  </div>
+<div class="programme-tabs">
+    <button class="tab active" onclick="showProgramme('ws2026')">
+        WS 2026/27
+    </button>
+    <button class="tab" onclick="showProgramme('ss2026')">
+        SS 2026
+    </button>
+</div>
 
-<table class="seminar-table">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Speaker</th>
-      <th>Title and Abstract</th>
-    </tr>
-  </thead>
+<div id="ws2026" class="programme-content">
+    <table class="seminar-table">
+        ...
+    </table>
+</div>
 
-  <tbody>
-
-   <tr>
-      <td>10.09</td>
-      <td> <a href="https://sites.google.com/view/dominik-schmid" target="_blank">Dominik Schmid</a><br>
-      <span class="affiliation">University of Augsburg</span></td>
-      <td><a href="abstract/schmidt.pdf" target="_blank"> Random walk approximation for the stationary distribution of the open ASEP</a></td>
-    </tr>
-    
-   <tr>
-      <td>23.09</td> 
-      <td> <a href="http://www.math.tohoku.ac.jp/english/people/nakano-e.html" target="_blank">Fumihiko Nakano</a><br>
-      <span class="affiliation">Tohoku University</span></td>
-      <td><a href="abstract/nakano.pdf" target="_blank">Random Mosaic Model</a></td>
-    </tr>
-
-  </tbody>
-</table>
+<div id="ss2026" class="programme-content" style="display:none;">
+       
+      <table class="seminar-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Speaker</th>
+            <th>Title and Abstract</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+      
+         <tr>
+            <td>10.09</td>
+            <td> <a href="https://sites.google.com/view/dominik-schmid" target="_blank">Dominik Schmid</a><br>
+            <span class="affiliation">University of Augsburg</span></td>
+            <td><a href="abstract/schmidt.pdf" target="_blank"> Random walk approximation for the stationary distribution of the open ASEP</a></td>
+          </tr>
+          
+         <tr>
+            <td>23.09</td> 
+            <td> <a href="http://www.math.tohoku.ac.jp/english/people/nakano-e.html" target="_blank">Fumihiko Nakano</a><br>
+            <span class="affiliation">Tohoku University</span></td>
+            <td><a href="abstract/nakano.pdf" target="_blank">Random Mosaic Model</a></td>
+          </tr>
+      
+        </tbody>
+      </table>
+</div>
 
 <div class="course-footer">
   <img src="images/Logo-Roma_Tre.png" alt="Roma Tre University" class="roma-logo">
   <img src="images/eu_funded_en-.jpg" alt="EU" class="eu-logo">
 </div>
 
-  </div>
+   <script>
+    function showProgramme(id) {
+        document.querySelectorAll('.programme-content').forEach(function(el) {
+            el.style.display = 'none';
+        });
+
+        document.getElementById(id).style.display = 'block';
+
+        document.querySelectorAll('.tab').forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+
+        event.currentTarget.classList.add('active');
+    }
+    </script>
+
+  
+</div>
 </body>
 </html>
