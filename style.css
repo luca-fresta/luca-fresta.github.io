@@ -67,9 +67,13 @@ p {
 }
 
 .eu-logo {
+  height: 124px;
+  position: relative;
+  top: -24px;
+  /*
   height: 68px;
   position: relative;
-  top: -4px;
+  top: -4px;*/
 
 }
 
