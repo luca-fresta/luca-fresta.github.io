@@ -23,11 +23,9 @@ body {
 
 /****** HEADER *******/
 
-/****** HEADER *******/
-
 .workshop-header {
   max-width: 1050px;
-  margin: 55px auto 0 auto;
+  margin: 65px auto 0 auto;
   padding: 10px 30px 38px;
   text-align: center;
 }
@@ -42,7 +40,7 @@ body {
 
 .workshop-subtitle {
   max-width: 760px;
-  margin: 16px auto 12px;
+  margin: 18px auto 20px;
   font-size: 28px;
   line-height: 1.5;
   color: #555555;
