@@ -1,501 +1,581 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-
-  <title>Workshop Title | Roma Tre University</title>
-
-  <meta
-    name="description"
-    content="Workshop Title — a workshop on ..."
-  >
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="workshop.css">
-</head>
-
-<body>
-
-  <!-- =========================================================
-       HEADER
-       ========================================================= -->
-
-  <header class="workshop-header">
-
-    <div class="workshop-kicker">
-      Università degli Studi Roma Tre
-    </div>
-
-    <h1>
-      Workshop Title
-    </h1>
-
-    <p class="workshop-subtitle">
-      A workshop on the mathematical and physical aspects of ...
-    </p>
-
-    <p class="workshop-date">
-      15–17 February 2027 · Rome, Italy
-    </p>
-
-    <div class="funding">
-      <span class="eu-emblem">EU</span>
-      <span>Funded by the European Union</span>
-    </div>
-
-  </header>
-
-
-  <!-- =========================================================
-       NAVIGATION TABS
-       ========================================================= -->
+/* ============================================================
+   GENERAL
+   ============================================================ */
 
-  <nav class="workshop-tabs" aria-label="Workshop sections">
-
-    <button
-      class="tab active"
-      data-tab="about"
-      type="button"
-    >
-      About
-    </button>
-
-    <button
-      class="tab"
-      data-tab="speakers"
-      type="button"
-    >
-      Speakers
-    </button>
-
-    <button
-      class="tab"
-      data-tab="programme"
-      type="button"
-    >
-      Programme
-    </button>
-
-    <button
-      class="tab"
-      data-tab="registration"
-      type="button"
-    >
-      Registration
-    </button>
-
-    <button
-      class="tab"
-      data-tab="practical"
-      type="button"
-    >
-      Practical information
-    </button>
+* {
+  box-sizing: border-box;
+}
 
-  </nav>
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  margin: 0;
+  padding: 0;
 
-  <!-- =========================================================
-       MAIN CONTENT
-       ========================================================= -->
+  font-family: 'Libre Baskerville', Times, serif;
+  font-size: 16px;
+  line-height: 1.65;
 
-  <main class="workshop-content">
+  color: #444444;
+  background: #ffffff;
+}
 
 
-    <!-- =======================================================
-         ABOUT
-         ======================================================= -->
+/* ============================================================
+   HEADER
+   ============================================================ */
 
-    <section
-      id="about"
-      class="tab-content active"
-      aria-labelledby="about-tab"
-    >
+.workshop-header {
+  max-width: 1050px;
 
-      <h2>About</h2>
+  margin: 55px auto 0 auto;
 
-      <p>
-        This workshop will bring together researchers working on
-        [topic] and related areas of probability, mathematical physics,
-        and quantum field theory.
-      </p>
+  padding: 0 30px 38px 30px;
 
-      <p>
-        The workshop will focus on recent developments in
-        [brief description of the scientific theme]. Particular
-        attention will be devoted to [main themes].
-      </p>
+  text-align: center;
+}
 
-      <p>
-        The event will take place at Università degli Studi Roma Tre
-        in Rome from 15 to 17 February 2027.
-      </p>
 
-      <h3>Organisers</h3>
+.workshop-kicker {
+  margin-bottom: 18px;
 
-      <p>
-        Alessandro Giuliani<br>
-        Luca Fresta
-      </p>
+  font-size: 14px;
+  line-height: 1.4;
 
-      <h3>Venue</h3>
+  color: #666666;
 
-      <p>
-        Department of Mathematics and Physics<br>
-        Università degli Studi Roma Tre<br>
-        Rome, Italy
-      </p>
+  letter-spacing: 0.04em;
+}
 
-    </section>
 
+.workshop-header h1 {
+  margin: 0;
 
-    <!-- =======================================================
-         SPEAKERS
-         ======================================================= -->
+  font-size: 38px;
+  line-height: 1.25;
 
-    <section
-      id="speakers"
-      class="tab-content"
-      aria-labelledby="speakers-tab"
-    >
+  font-weight: 400;
 
-      <h2>Speakers</h2>
+  color: #222222;
+}
 
-      <div class="speaker-list">
 
-        <div class="speaker">
-          <h3>First Speaker</h3>
-          <p>
-            University / Institution
-          </p>
-        </div>
+.workshop-subtitle {
+  max-width: 760px;
 
-        <div class="speaker">
-          <h3>Second Speaker</h3>
-          <p>
-            University / Institution
-          </p>
-        </div>
+  margin: 16px auto 12px auto;
 
-        <div class="speaker">
-          <h3>Third Speaker</h3>
-          <p>
-            University / Institution
-          </p>
-        </div>
+  font-size: 19px;
+  line-height: 1.5;
 
-        <div class="speaker">
-          <h3>Fourth Speaker</h3>
-          <p>
-            University / Institution
-          </p>
-        </div>
+  color: #555555;
+}
 
-      </div>
 
-    </section>
+.workshop-date {
+  margin: 0;
 
+  font-size: 15px;
 
-    <!-- =======================================================
-         PROGRAMME
-         ======================================================= -->
+  color: #666666;
+}
 
-    <section
-      id="programme"
-      class="tab-content"
-      aria-labelledby="programme-tab"
-    >
 
-      <h2>Programme</h2>
+/* ============================================================
+   FUNDING
+   ============================================================ */
 
-      <p class="programme-note">
-        The detailed programme will be available soon.
-      </p>
+.funding {
+  display: flex;
 
-      <!-- Example structure for the final programme -->
+  justify-content: center;
+  align-items: center;
 
-      <div class="programme-day">
+  gap: 9px;
 
-        <h3>Monday, 15 February</h3>
+  margin-top: 25px;
 
-        <table class="programme-table">
+  font-size: 13px;
 
-          <tbody>
+  color: #555555;
+}
 
-            <tr>
-              <td class="programme-time">09:30</td>
-              <td>
-                <strong>Speaker Name</strong><br>
-                Title of the talk
-              </td>
-            </tr>
 
-            <tr>
-              <td class="programme-time">11:00</td>
-              <td>
-                <strong>Speaker Name</strong><br>
-                Title of the talk
-              </td>
-            </tr>
+.eu-emblem {
+  display: inline-flex;
 
-            <tr class="break">
-              <td class="programme-time">12:30</td>
-              <td>Lunch</td>
-            </tr>
+  justify-content: center;
+  align-items: center;
 
-            <tr>
-              <td class="programme-time">14:30</td>
-              <td>
-                <strong>Speaker Name</strong><br>
-                Title of the talk
-              </td>
-            </tr>
+  width: 28px;
+  height: 20px;
 
-          </tbody>
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
 
-        </table>
+  color: #ffffff;
 
-      </div>
+  background: #003399;
+}
 
 
-      <div class="programme-day">
+/* ============================================================
+   NAVIGATION TABS
+   ============================================================ */
 
-        <h3>Tuesday, 16 February</h3>
+.workshop-tabs {
+  max-width: 1050px;
 
-        <table class="programme-table">
+  margin: 0 auto;
 
-          <tbody>
+  padding: 0 30px;
 
-            <tr>
-              <td class="programme-time">09:30</td>
-              <td>
-                <strong>Speaker Name</strong><br>
-                Title of the talk
-              </td>
-            </tr>
+  display: flex;
 
-            <tr>
-              <td class="programme-time">11:00</td>
-              <td>
-                <strong>Speaker Name</strong><br>
-                Title of the talk
-              </td>
-            </tr>
+  justify-content: center;
+  align-items: center;
 
-          </tbody>
+  gap: 30px;
 
-        </table>
+  border-bottom: 1px solid #e5e5e5;
+}
 
-      </div>
 
+.tab {
+  position: relative;
 
-      <!--
-      Abstracts can later be added here, for example:
+  padding: 14px 0 13px 0;
 
-      <div class="abstract">
-        <h4>Speaker Name — Title of the talk</h4>
-        <p>
-          Abstract text ...
-        </p>
-      </div>
-      -->
+  border: none;
 
-    </section>
+  background: none;
 
+  font-family: inherit;
+  font-size: 14px;
 
-    <!-- =======================================================
-         REGISTRATION
-         ======================================================= -->
+  color: #555555;
 
-    <section
-      id="registration"
-      class="tab-content"
-      aria-labelledby="registration-tab"
-    >
+  cursor: pointer;
+}
 
-      <h2>Registration</h2>
 
-      <p>
-        Participation is free of charge, but registration is required.
-      </p>
+.tab:hover {
+  color: #33a7b5;
+}
 
-      <p>
-        To register for the workshop, please complete the form below.
-      </p>
 
+.tab.active {
+  color: #222222;
+}
 
-      <form class="registration-form">
 
-        <div class="form-field">
+.tab.active::after {
+  content: "";
 
-          <label for="name">
-            Name
-          </label>
+  position: absolute;
 
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-          >
+  left: 0;
+  right: 0;
+  bottom: -1px;
 
-        </div>
+  height: 2px;
 
+  background: #33a7b5;
+}
 
-        <div class="form-field">
 
-          <label for="institution">
-            Institution
-          </label>
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
 
-          <input
-            type="text"
-            id="institution"
-            name="institution"
-            required
-          >
+.workshop-content {
+  max-width: 880px;
 
-        </div>
+  margin: 0 auto;
 
+  padding: 55px 30px 80px 30px;
+}
 
-        <div class="form-field">
 
-          <label for="email">
-            Email
-          </label>
+.tab-content {
+  display: none;
+}
 
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-          >
 
-        </div>
+.tab-content.active {
+  display: block;
+}
 
 
-        <div class="form-field">
+.tab-content h2 {
+  margin: 0 0 30px 0;
 
-          <label for="dietary">
-            Dietary requirements
-            <span class="optional">(optional)</span>
-          </label>
+  font-size: 27px;
+  line-height: 1.3;
 
-          <textarea
-            id="dietary"
-            name="dietary"
-            rows="3"
-          ></textarea>
+  font-weight: 400;
 
-        </div>
+  color: #222222;
+}
 
 
-        <button
-          type="submit"
-          class="submit-button"
-        >
-          Register
-        </button>
+.tab-content h3 {
+  margin: 38px 0 12px 0;
 
-      </form>
+  font-size: 19px;
+  line-height: 1.4;
 
-    </section>
+  font-weight: 700;
 
+  color: #222222;
+}
 
-    <!-- =======================================================
-         PRACTICAL INFORMATION
-         ======================================================= -->
 
-    <section
-      id="practical"
-      class="tab-content"
-      aria-labelledby="practical-tab"
-    >
+.tab-content p {
+  margin: 0 0 20px 0;
+}
 
-      <h2>Practical information</h2>
 
-      <h3>Venue</h3>
+.tab-content a {
+  color: #185da3;
 
-      <p>
-        Department of Mathematics and Physics<br>
-        Università degli Studi Roma Tre<br>
-        Largo San Leonardo Murialdo, 1<br>
-        00146 Rome, Italy
-      </p>
+  text-decoration: none;
+}
 
 
-      <h3>How to get there</h3>
+.tab-content a:hover {
+  text-decoration: underline;
+}
 
-      <p>
-        Information on public transportation and directions to the
-        venue will be provided here.
-      </p>
 
+/* ============================================================
+   SPEAKERS
+   ============================================================ */
 
-      <h3>Accommodation</h3>
+.speaker-list {
+  margin-top: 5px;
+}
 
-      <p>
-        Participants are responsible for arranging their own
-        accommodation. A list of nearby hotels and other options
-        will be provided here.
-      </p>
 
+.speaker {
+  padding: 18px 0;
 
-      <h3>Contact</h3>
+  border-bottom: 1px solid #eeeeee;
+}
 
-      <p>
-        For questions concerning the workshop, please contact:
-      </p>
 
-      <p>
-        <a href="mailto:workshop@example.com">
-          workshop@example.com
-        </a>
-      </p>
+.speaker:first-child {
+  padding-top: 0;
+}
 
-    </section>
 
+.speaker h3 {
+  margin: 0 0 4px 0;
 
-  </main>
+  font-size: 17px;
+  font-weight: 700;
+}
 
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
+.speaker p {
+  margin: 0;
 
-  <footer class="workshop-footer">
+  font-size: 15px;
 
-    <div class="footer-inner">
+  color: #666666;
+}
 
-      <p>
-        Workshop Title · Università degli Studi Roma Tre · Rome · 2027
-      </p>
 
-      <p>
-        Funded by the European Union.
-      </p>
+/* ============================================================
+   PROGRAMME
+   ============================================================ */
 
-      <p class="disclaimer">
-        Views and opinions expressed are however those of the
-        author(s) only and do not necessarily reflect those of the
-        European Union or the granting authority.
-      </p>
+.programme-note {
+  color: #666666;
+}
 
-    </div>
 
-  </footer>
+.programme-day {
+  margin-top: 40px;
+}
 
 
-  <!-- JavaScript -->
-  <script src="workshop.js"></script>
+.programme-day h3 {
+  margin: 0 0 15px 0;
 
-</body>
-</html>
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+
+.programme-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 15px;
+}
+
+
+.programme-table tr {
+  border-top: 1px solid #eeeeee;
+}
+
+
+.programme-table tr:last-child {
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.programme-table td {
+  padding: 13px 10px;
+
+  vertical-align: top;
+}
+
+
+.programme-time {
+  width: 90px;
+
+  color: #666666;
+
+  white-space: nowrap;
+}
+
+
+.programme-table .break td {
+  color: #777777;
+
+  font-style: italic;
+}
+
+
+/* ============================================================
+   ABSTRACTS
+   ============================================================ */
+
+.abstract {
+  margin-top: 35px;
+  padding-top: 25px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+.abstract h4 {
+  margin: 0 0 10px 0;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+
+.abstract p {
+  font-size: 15px;
+}
+
+
+/* ============================================================
+   REGISTRATION FORM
+   ============================================================ */
+
+.registration-form {
+  max-width: 600px;
+
+  margin-top: 35px;
+}
+
+
+.form-field {
+  margin-bottom: 23px;
+}
+
+
+.form-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 14px;
+
+  color: #444444;
+}
+
+
+.optional {
+  color: #888888;
+}
+
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+
+  padding: 10px 11px;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 0;
+
+  background: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  color: #333333;
+}
+
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+
+  border-color: #33a7b5;
+}
+
+
+.form-field textarea {
+  resize: vertical;
+}
+
+
+.submit-button {
+  padding: 10px 22px;
+
+  border: none;
+
+  background: #33a7b5;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+
+.submit-button:hover {
+  background: #278f9c;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.workshop-footer {
+  border-top: 1px solid #e5e5e5;
+}
+
+
+.footer-inner {
+  max-width: 880px;
+
+  margin: 0 auto;
+
+  padding: 35px 30px 45px 30px;
+
+  font-size: 13px;
+
+  color: #777777;
+}
+
+
+.footer-inner p {
+  margin: 0 0 10px 0;
+}
+
+
+.footer-inner .disclaimer {
+  max-width: 720px;
+
+  margin-top: 18px;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  color: #888888;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  body {
+    font-size: 15px;
+  }
+
+
+  .workshop-header {
+    margin-top: 35px;
+
+    padding: 0 20px 30px 20px;
+  }
+
+
+  .workshop-header h1 {
+    font-size: 29px;
+  }
+
+
+  .workshop-subtitle {
+    font-size: 17px;
+  }
+
+
+  .workshop-tabs {
+    justify-content: flex-start;
+
+    gap: 22px;
+
+    padding: 0 20px;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+  }
+
+
+  .tab {
+    flex-shrink: 0;
+
+    font-size: 13px;
+  }
+
+
+  .workshop-content {
+    padding: 40px 20px 60px 20px;
+  }
+
+
+  .tab-content h2 {
+    font-size: 24px;
+  }
+
+
+  .programme-table {
+    font-size: 14px;
+  }
+
+
+  .programme-time {
+    width: 70px;
+  }
+
+
+  .footer-inner {
+    padding: 30px 20px 40px 20px;
+  }
+
+}
