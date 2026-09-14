@@ -181,7 +181,7 @@ ul.hanging-bullets li {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 
-    position: sticky;
+    position: sticky; /* sticking at the top when scrolling */
     top: 0;
     z-index: 1000;
     background: white;
