@@ -180,6 +180,11 @@ ul.hanging-bullets li {
   margin-bottom: 35px;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
 }
 
 /* old version
