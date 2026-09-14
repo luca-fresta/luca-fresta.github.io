@@ -83,47 +83,12 @@ body {
 }
 
 .eu-emblem {
+   display: block;
+
   width: 120px;
   height: auto;
-}
 
-
-/* ============================================================
-   FUNDING
-   ============================================================ */
-
-.funding {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  gap: 9px;
-
-  margin-top: 25px;
-
-  font-size: 13px;
-
-  color: #555555;
-}
-
-
-.eu-emblem {
-  display: inline-flex;
-
-  justify-content: center;
-  align-items: center;
-
-  width: 28px;
-  height: 20px;
-
-  font-family: Arial, sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-
-  color: #ffffff;
-
-  background: #003399;
+  margin: 25px auto 0 auto;
 }
 
 
