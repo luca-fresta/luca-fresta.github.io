@@ -212,20 +212,16 @@ body {
 /* SPEAKERS */
 
 .speaker-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 0;
   margin-top: 5px;
 }
 
 .speaker {
-  padding: 11px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #eee;
-}
-
-.speaker:first-child {
-  padding-top: 0;
-}
-
-.speaker:last-child {
-  border-bottom: none;
 }
 
 .speaker h3 {
@@ -444,21 +440,21 @@ body {
     font-size: 13px;
   }
 
-
   .workshop-content {
     padding: 40px 20px 60px 20px;
   }
-
 
   .tab-content h2 {
     font-size: 24px;
   }
 
+  .speaker-list {
+    grid-template-columns: 1fr;
+  }
 
   .programme-table {
     font-size: 14px;
   }
-
 
   .programme-time {
     width: 70px;
