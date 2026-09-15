@@ -23,17 +23,15 @@ body {
 
 /****** HEADER *******/
 
-/*
+
 .workshop-header {
   max-width: 1050px;
   margin: 65px auto 0 auto;
   padding: 10px 30px 38px;
   text-align: center;
-}*/
-
-.workshop-header {
+  
   position: relative;
-  background-image: url("images/wk-header.jpg");
+  background-image: url("images/wk-header.jpeg");
   background-size: cover;
   background-position: center;
 }
