@@ -25,16 +25,17 @@ body {
 
 
 .workshop-header {
-  max-width: 1050px;
-  margin: 65px auto 0 auto;
-  padding: 10px 30px 38px;
-  text-align: center;
-  
   position: relative;
   width: 100%;
-  margin: 0;
+  min-height: 520px;
   padding: 70px 30px 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
+
   background-image: url("images/wk-header.png");
   background-size: cover;
   background-position: center;
@@ -45,7 +46,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.63);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .workshop-header > * {
