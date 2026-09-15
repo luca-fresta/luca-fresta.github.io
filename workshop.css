@@ -31,9 +31,14 @@ body {
   text-align: center;
   
   position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 70px 30px 55px;
+  text-align: center;
   background-image: url("images/wk-header.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .workshop-header::before {
