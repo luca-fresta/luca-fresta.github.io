@@ -24,6 +24,8 @@ body {
 /****** HEADER *******/
 
 
+/****** HEADER *******/
+
 .workshop-header {
   position: relative;
   width: 100%;
@@ -51,6 +53,7 @@ body {
 
 .workshop-header > * {
   position: relative;
+  z-index: 1;
 }
 
 .workshop-header h1 {
@@ -73,16 +76,6 @@ body {
   margin: 0;
   font-size: 22px;
   color: #666666;
-}
-
-.funding {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 25px;
-  font-size: 13px;
-  color: #555555;
 }
 
 .eu-emblem {
