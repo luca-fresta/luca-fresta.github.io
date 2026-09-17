@@ -325,6 +325,19 @@ body {
 
 /******** REGISTRATION FORM ******/
 
+
+.google-form {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.google-form iframe {
+  display: block;
+  width: 100%;
+  min-height: 1000px;
+  border: none;
+}
+
 .registration-form {
   max-width: 600px;
   margin-top: 35px;
