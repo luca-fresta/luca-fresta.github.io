@@ -309,6 +309,14 @@ ul.hanging-bullets li {
   background: #fafafa;
 }
 
+.seminar-entry {
+  margin-bottom: 12px;
+}
+
+.seminar-entry:last-child {
+  margin-bottom: 0;
+}
+
 .affiliation {
   font-size: 13px;
   color: #555;
